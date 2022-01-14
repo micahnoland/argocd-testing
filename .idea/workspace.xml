@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7719323-db8b-4e37-9fa4-236531de20b8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/guestbook/guestbook-ui-deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guestbook/guestbook-ui-svc.yaml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/cluster-addons/templates/helm-guestbook.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/cluster-addons/templates/helm-guestbook.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/cluster-addons/templates/kustomize-guestbook.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/cluster-addons/templates/kustomize-guestbook.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/cluster-addons/templates/namespaces.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/cluster-addons/templates/namespaces.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +44,22 @@
       <option name="presentableId" value="Default" />
       <updated>1642185663364</updated>
       <workItem from="1642185665716" duration="78000" />
-      <workItem from="1642185756434" duration="2451000" />
+      <workItem from="1642185756434" duration="3367000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

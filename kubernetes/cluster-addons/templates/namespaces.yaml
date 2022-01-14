@@ -17,7 +17,7 @@ spec:
       releaseName: namespaces
       values:       |
         resources:
-{{- if .Values.kustomize-guestbook.enabled -}}
+{{- if index .Values "kustomize-guestbook.enabled" -}}
           - apiVersion: v1
             kind: Namespace
             metadata:
@@ -27,7 +27,7 @@ spec:
                 app.kubernetes.io/component: namespace
               name: kustomize-guestbook
 {{- end }}
-{{- if .Values.helm-guestbook.enabled -}}
+{{- if index .Values "helm-guestbook.enabled" -}}
           - apiVersion: v1
             kind: Namespace
             metadata:
