@@ -1,0 +1,43 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: '{{ .Values.cluster.name }}-namespaces'
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://kubernetes-charts-incubator.storage.googleapis.com/
+    targetRevision: 0.2.3
+    chart: raw
+    helm:
+      releaseName: namespaces
+      values:       |
+        resources:
+{{- if .Values.kustomize-guestbook.enabled -}}
+          - apiVersion: v1
+            kind: Namespace
+            metadata:
+              labels:
+                app.kubernetes.io/managed-by: argocd
+                app.kubernetes.io/name: kustomize-guestbook
+                app.kubernetes.io/component: namespace
+              name: kustomize-guestbook
+{{- end }}
+{{- if .Values.helm-guestbook.enabled -}}
+          - apiVersion: v1
+            kind: Namespace
+            metadata:
+              labels:
+                app.kubernetes.io/managed-by: argocd
+                app.kubernetes.io/name: helm-guestbook
+                app.kubernetes.io/component: namespace
+              name: helm-guestbook
+{{- end }}
+  destination:
+    namespace:
+    server: {{ .Values.spec.destination.server }}
+
