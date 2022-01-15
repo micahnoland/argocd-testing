@@ -10,8 +10,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://kubernetes-charts-incubator.storage.googleapis.com/
-    targetRevision: 0.2.3
+    repoURL: https://artifacthub.github.io/helm-charts/
+    targetRevision: master
     chart: raw
     helm:
       releaseName: namespaces
