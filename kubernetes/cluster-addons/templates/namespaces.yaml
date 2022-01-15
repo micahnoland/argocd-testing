@@ -10,8 +10,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://artifacthub.github.io/helm-charts/
-    targetRevision: master
+    repoURL: https://bedag.github.io/helm-charts/
+    targetRevision: 1.1.0
     chart: raw
     helm:
       releaseName: namespaces
