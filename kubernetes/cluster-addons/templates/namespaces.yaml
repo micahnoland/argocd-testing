@@ -40,4 +40,7 @@ spec:
   destination:
     namespace:
     server: {{ .Values.spec.destination.server }}
-
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
