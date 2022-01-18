@@ -1,4 +1,4 @@
 helm-guestbook:
   enabled: true
 kustomize-guestbook:
-  enabled: false
+  enabled: true
