@@ -1,7 +1,3 @@
-helm-guestbook:
-  enabled: true
-kustomize-guestbook:
-  enabled: false
 cluster:
   name: 'default'
 spec:
