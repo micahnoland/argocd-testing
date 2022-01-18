@@ -1,3 +1,4 @@
+fleet: staging
 helm-guestbook:
   enabled: true
 kustomize-guestbook:

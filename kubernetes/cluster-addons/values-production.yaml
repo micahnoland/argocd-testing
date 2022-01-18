@@ -1,3 +1,4 @@
+fleet: production
 helm-guestbook:
   enabled: true
 kustomize-guestbook:

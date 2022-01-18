@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    path: 'kubernetes/addons/kustomize-guestbook'
+    path: 'kubernetes/addons/kustomize-guestbook/overlays/{{ .Values.fleet }}'
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   destination:
